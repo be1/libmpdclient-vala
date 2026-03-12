@@ -566,6 +566,10 @@ namespace Mpd {
 		public int recv_albumart(uint8[] buf);
 		[CCode (cname = "mpd_run_albumart")]
 		public int run_albumart(string uri, uint offset, uint8[] buf);
+		[CCode (cname = "mpd_send_binarylimit")]
+		public bool send_binarylimit(uint limit = 8192);
+		[CCode (cname = "mpd_run_binarylimit")]
+		public bool run_binarylimit(uint limit = 8192);
 	}
 
 	[CCode (cname = "struct mpd_directory",
