@@ -1,11 +1,11 @@
-AC_INIT([mpc-vala], [0.21], [mende.christoph@gmail.com])
-AC_CONFIG_SRCDIR([config.h.in])
-AC_CONFIG_HEADERS([config.h])
+AC_INIT([libmpdclient-vala], [0.21], [brouits@free.fr])
+#AC_CONFIG_SRCDIR([config.h.in])
+#AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([dist-bzip2 foreign subdir-objects])
 
-AC_PROG_CC
-AC_PATH_PROG(VALAC, valac, valac)
-AC_SUBST(VALAC)
+#AC_PROG_CC
+#AC_PATH_PROG(VALAC, valac, valac)
+#AC_SUBST(VALAC)
 
 vapidir="${datadir}/vala/vapi"
 AC_SUBST(vapidir)
